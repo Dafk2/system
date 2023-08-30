@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta name="google-signin-client_id" content="132171700670-pni2e0949mp46pkijhptpvltbbd93g6b.apps.googleusercontent.com">
+    <title>Google Sign-In</title>
+</head>
+<body style="background-color: #000; color: red;" class="container">
+    <div class="row mt-5">
+      
+      <div class="col-sm-6">
+         <h1 style="color: aqua; font-size: 42px;"> Google Sign-In </h1>
+         <hr>
+         <br>
+         <div class="g-signin2" data-onsuccess="onSignIn"></div>
+         <br>
+         <a href="#" onclick="signOut();" style="font-size: 24px; color: lightcoral;">Sign out</a>
+      </div>
+      
+      <div class="col-sm-6">
+        <form class="d-grid">
+          <h1 style="color: aqua;">Login Form</h1>
+          <hr>
+          <input type="text" name="email" class="form-control mb-2" placeholder="email" />
+          <input type="text" name="password" class="form-control mb-2" placeholder="password" />
+          <button type="submit" class="btn btn-primary">
+            Ingresar
+          </button>
+        </form>
+      
+      </div>
+
+    </div> 
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <br><br>
+
+    <script src="./auth_google.js"></script>
+</body>
+</html>
